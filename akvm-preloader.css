@@ -1,0 +1,167 @@
+
+
+/* ------ ALL OF THIS CSS IS **REQUIRED** FOR THE PRELOADER -------- */
+
+#typingEffect {
+    opacity: 1;
+    transition: opacity 2s ease;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: blink 1s step-end infinite;
+    font-size: 20px;
+}
+
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+
+.akvm-preloader {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9991;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+}
+
+
+.akvm-preloader__image {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+.akvm-preloader__matrix {
+    opacity: 1;
+    transition: opacity 2s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* ------ ALL OF THIS CSS IS JUST FOR SHOW AFTER THE PRELOADER -------- */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-wrapper {
+    opacity: 0;
+    transition: opacity 3s ease;
+
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: #333; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    min-width: 300px;
+    background-color: #08342a;
+    background: #08342a;
+}
+
+.main-header {
+    position: relative;
+    height: 75vh;
+}
+
+.main-header img {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 25%;
+    height: auto;
+}
+
+.main-header .main-header__title {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+
+.site-footer {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+
+.site-footer-bottom__inner {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.site-footer-bottom__copy-right {
+    font-size: 20px;
+    color: #9e9ea7;
+    margin: 0;
+}
+
+.site-footer-bottom__copy-right a {
+    color: #4e6d66;
+}
+
+.site-footer-bottom__copy-right a:hover {
+    color: #fff;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    color: #4e6d66;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+h1 {
+    color: #9e9ea7;
+    margin: 0;
+    font-size: 25px;
+}
+
+
+
+a img {
+    transition: opacity 0.3s ease;
+}
+
+a:hover img {
+    opacity: 0.7;
+}
